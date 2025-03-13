@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\CMakeFiles\69803159886c860aed2b5a2fe813cf3c\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{5B7E8D26-E7B8-3929-8FB1-A8AFAB3876DB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

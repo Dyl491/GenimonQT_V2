@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\controle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\capture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\choixjoueur.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\combat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\commande.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\genidex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\historencontre.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\map.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\regle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\mainmenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\EWIEGA46WW\qrc_Image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\controle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\capture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\choixjoueur.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\combat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\commande.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\genidex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\historencontre.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\regle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\mainmenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_Debug\ui_controle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_Debug\ui_capture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_Debug\ui_choixjoueur.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_Debug\ui_combat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_Debug\ui_commande.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_Debug\ui_genidex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_Debug\ui_historencontre.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_Debug\ui_map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_Debug\ui_regle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_Debug\ui_mainmenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_Release\ui_controle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_Release\ui_capture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_Release\ui_choixjoueur.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_Release\ui_combat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_Release\ui_commande.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_Release\ui_genidex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_Release\ui_historencontre.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_Release\ui_map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_Release\ui_regle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_Release\ui_mainmenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_MinSizeRel\ui_controle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_MinSizeRel\ui_capture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_MinSizeRel\ui_choixjoueur.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_MinSizeRel\ui_combat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_MinSizeRel\ui_commande.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_MinSizeRel\ui_genidex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_MinSizeRel\ui_historencontre.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_MinSizeRel\ui_map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_MinSizeRel\ui_regle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_MinSizeRel\ui_mainmenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_RelWithDebInfo\ui_controle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_RelWithDebInfo\ui_capture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_RelWithDebInfo\ui_choixjoueur.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_RelWithDebInfo\ui_combat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_RelWithDebInfo\ui_commande.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_RelWithDebInfo\ui_genidex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_RelWithDebInfo\ui_historencontre.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_RelWithDebInfo\ui_map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_RelWithDebInfo\ui_regle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_RelWithDebInfo\ui_mainmenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\CMakeFiles\0fdc2009d360f3b8533da26de9bc8c26\autouic_(CONFIG).stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\CMakeFiles\4b587c0fb647b28aacd47acfc07d8862\qrc_Image.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\controle.ui">
+      <Filter>Forms</Filter>
+    </None>
+    <None Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\capture.ui">
+      <Filter>Forms</Filter>
+    </None>
+    <None Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\choixjoueur.ui">
+      <Filter>Forms</Filter>
+    </None>
+    <None Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\combat.ui">
+      <Filter>Forms</Filter>
+    </None>
+    <None Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\commande.ui">
+      <Filter>Forms</Filter>
+    </None>
+    <None Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\genidex.ui">
+      <Filter>Forms</Filter>
+    </None>
+    <None Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\historencontre.ui">
+      <Filter>Forms</Filter>
+    </None>
+    <None Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\map.ui">
+      <Filter>Forms</Filter>
+    </None>
+    <None Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\regle.ui">
+      <Filter>Forms</Filter>
+    </None>
+    <None Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\mainmenu.ui">
+      <Filter>Forms</Filter>
+    </None>
+    <None Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\Image.qrc">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\autouic_Debug.stamp" />
+    <None Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\autouic_Release.stamp" />
+    <None Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\autouic_MinSizeRel.stamp" />
+    <None Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\autouic_RelWithDebInfo.stamp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{5B7E8D26-E7B8-3929-8FB1-A8AFAB3876DB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Forms">
+      <UniqueIdentifier>{B4AF3BE3-37A1-3F9F-B92A-054E381DD592}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{1F701D45-E9DF-397E-94C7-BDC46C7DC498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{A967C47F-2F9A-3F0C-BFD1-90E53F3F8C3E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{64831FB5-E09C-387E-A328-83012A996C37}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
