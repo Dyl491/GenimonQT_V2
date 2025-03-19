@@ -12,3 +12,7 @@ Genidex::~Genidex()
 {
     delete ui;
 }
+
+void Genidex::handleKeyPress(int key) {
+
+}

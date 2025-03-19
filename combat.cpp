@@ -12,3 +12,7 @@ Combat::~Combat()
 {
     delete ui;
 }
+
+void Combat::handleKeyPress(int key) {
+
+}

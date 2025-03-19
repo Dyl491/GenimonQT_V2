@@ -12,3 +12,7 @@ Map::~Map()
 {
     delete ui;
 }
+
+void Map::handleKeyPress(int key) {
+
+}

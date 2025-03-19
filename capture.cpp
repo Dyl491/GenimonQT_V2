@@ -12,3 +12,7 @@ Capture::~Capture()
 {
     delete ui;
 }
+
+void Capture::handleKeyPress(int key) {
+
+}

@@ -34,10 +34,45 @@ Controle::Controle(QWidget *parent)
     ChoixJoueur* choixJoueurMenu = qobject_cast<ChoixJoueur*>(stackedWidget->widget(1));
     if (choixJoueurMenu) {
         connect(this, &Controle::sendKeyPress, choixJoueurMenu, &ChoixJoueur::handleKeyPress);
+        connect(choixJoueurMenu, &ChoixJoueur::requestMenuChange, this, &Controle::changeMenu);
+    }
+    Map* mapMenu = qobject_cast<Map*>(stackedWidget->widget(2));
+    if (mapMenu) {
+        connect(this, &Controle::sendKeyPress, mapMenu, &Map::handleKeyPress);
+        connect(mapMenu, &Map::requestMenuChange, this, &Controle::changeMenu);
+    }
+    Capture* captureMenu = qobject_cast<Capture*>(stackedWidget->widget(3));
+    if (captureMenu) {
+        connect(this, &Controle::sendKeyPress, captureMenu, &Capture::handleKeyPress);
+        connect(captureMenu, &Capture::requestMenuChange, this, &Controle::changeMenu);
+    }
+    Combat* combatMenu = qobject_cast<Combat*>(stackedWidget->widget(4));
+    if (combatMenu) {
+        connect(this, &Controle::sendKeyPress, combatMenu, &Combat::handleKeyPress);
+        connect(combatMenu, &Combat::requestMenuChange, this, &Controle::changeMenu);
+    }
+    Genidex* genidexMenu = qobject_cast<Genidex*>(stackedWidget->widget(5));
+    if (genidexMenu) {
+        connect(this, &Controle::sendKeyPress, genidexMenu, &Genidex::handleKeyPress);
+        connect(genidexMenu, &Genidex::requestMenuChange, this, &Controle::changeMenu);
+    }
+    HistoRencontre* histoRencontreMenu = qobject_cast<HistoRencontre*>(stackedWidget->widget(6));
+    if (histoRencontreMenu) {
+        connect(this, &Controle::sendKeyPress, histoRencontreMenu, &HistoRencontre::handleKeyPress);
+        connect(histoRencontreMenu, &HistoRencontre::requestMenuChange, this, &Controle::changeMenu);
+    }
+    Commande* commandeMenu = qobject_cast<Commande*>(stackedWidget->widget(7));
+    if (commandeMenu) {
+        connect(this, &Controle::sendKeyPress, commandeMenu, &Commande::handleKeyPress);
+        connect(commandeMenu, &Commande::requestMenuChange, this, &Controle::changeMenu);
+    }
+    Regle* regleMenu = qobject_cast<Regle*>(stackedWidget->widget(8));
+    if (regleMenu) {
+        connect(this, &Controle::sendKeyPress, regleMenu, &Regle::handleKeyPress);
+        connect(regleMenu, &Regle::requestMenuChange, this, &Controle::changeMenu);
     }
 
-    // Connexion entre le signal de ChoixJoueur et la méthode changeMenu
-    connect(choixJoueurMenu, &ChoixJoueur::requestMenuChange, this, &Controle::changeMenu);
+
 }
 
 Controle::~Controle()

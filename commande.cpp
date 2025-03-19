@@ -12,3 +12,7 @@ Commande::~Commande()
 {
     delete ui;
 }
+
+void Commande::handleKeyPress(int key) {
+
+}

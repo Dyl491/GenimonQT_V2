@@ -12,3 +12,7 @@ Regle::~Regle()
 {
     delete ui;
 }
+
+void Regle::handleKeyPress(int key) {
+
+}

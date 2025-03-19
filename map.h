@@ -15,8 +15,14 @@ public:
     explicit Map(QWidget *parent = nullptr);
     ~Map();
 
+public slots:
+    void handleKeyPress(int key);
+
 private:
     Ui::Map *ui;
+
+signals:
+    void requestMenuChange(int index);  // Signal pour demander un changement de menu
 };
 
 #endif // MAP_H

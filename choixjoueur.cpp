@@ -42,6 +42,7 @@ void ChoixJoueur::handleKeyPress(int key) {
 
     if (etat == 0 && key == Qt::Key_Escape) {
         nomJoueur = ui->NomChoisi->text();
+        ui->NomChoisi->clearFocus();
         qDebug() << "Nom validé par Escape :" << nomJoueur;
 
         etat = 1;

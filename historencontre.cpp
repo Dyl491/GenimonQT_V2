@@ -12,3 +12,7 @@ HistoRencontre::~HistoRencontre()
 {
     delete ui;
 }
+
+void HistoRencontre::handleKeyPress(int key) {
+
+}
