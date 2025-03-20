@@ -1,5 +1,6 @@
 #include "regle.h"
 #include "ui_regle.h"
+#include <QDebug>
 
 Regle::Regle(QWidget *parent)
     : QWidget(parent)
@@ -15,4 +16,8 @@ Regle::~Regle()
 
 void Regle::handleKeyPress(int key) {
 
+    if (key == Qt::Key_2) {
+        emit requestMenuChange(0); //Passer au menu principal
+        clearFocus();
+    }
 }

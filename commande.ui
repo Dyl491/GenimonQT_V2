@@ -577,7 +577,7 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>Retour au menu</string>
+    <string>Retour au menu (2)</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignmentFlag::AlignCenter</set>

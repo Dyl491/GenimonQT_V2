@@ -81,6 +81,8 @@ C:/Users/dylan/OneDrive/Documents/Qt\ project/GenimonV2/build/Desktop_Qt_6_7_3_M
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qpair.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qpoint.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qprocessordetection.h \
+  C:/Qt/6.7.3/msvc2022_64/include/QtCore/qproperty.h \
+  C:/Qt/6.7.3/msvc2022_64/include/QtCore/qpropertyprivate.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qrect.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qrefcount.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qscopedpointer.h \
@@ -169,6 +171,10 @@ C:/Users/dylan/OneDrive/Documents/Qt\ project/GenimonV2/build/Desktop_Qt_6_7_3_M
   C:/Qt/6.7.3/msvc2022_64/include/QtGui/qvectornd.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtGui/qwindowdefs_win.h \
+  C:/Qt/6.7.3/msvc2022_64/include/QtSerialPort/QSerialPort \
+  C:/Qt/6.7.3/msvc2022_64/include/QtSerialPort/qserialport.h \
+  C:/Qt/6.7.3/msvc2022_64/include/QtSerialPort/qserialportglobal.h \
+  C:/Qt/6.7.3/msvc2022_64/include/QtSerialPort/qtserialportexports.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/QMainWindow \
   C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/QStackedWidget \
   C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/qframe.h \
@@ -179,4 +185,5 @@ C:/Users/dylan/OneDrive/Documents/Qt\ project/GenimonV2/build/Desktop_Qt_6_7_3_M
   C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/qtwidgetsglobal.h \
-  C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/qwidget.h
+  C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/qwidget.h \
+  C:/Users/dylan/OneDrive/Documents/Qt\ project/GenimonV2/libs/json.hpp
