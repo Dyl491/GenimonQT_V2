@@ -101,7 +101,7 @@
     <enum>Qt::TextFormat::PlainText</enum>
    </property>
    <property name="pixmap">
-    <pixmap resource="../Genimon/Image.qrc">:/MainMenu/Image_Qt/EcranAccueil/pixel-art-sky-background-with-clouds-cloudy-blue-sky-for-8bit-game-on-white-background-vector.jpg</pixmap>
+    <pixmap resource="Image.qrc">:/Decor/Image_Qt/Decor/Ciel_menu.jpg</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -242,7 +242,7 @@
   <zorder>Commande</zorder>
  </widget>
  <resources>
-  <include location="../Genimon/Image.qrc"/>
+  <include location="Image.qrc"/>
  </resources>
  <connections/>
 </ui>

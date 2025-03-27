@@ -47,7 +47,7 @@ public:
         BackGround->setAutoFillBackground(true);
         BackGround->setFrameShape(QFrame::Shape::Box);
         BackGround->setTextFormat(Qt::TextFormat::PlainText);
-        BackGround->setPixmap(QPixmap(QString::fromUtf8(":/MainMenu/Image_Qt/EcranAccueil/pixel-art-sky-background-with-clouds-cloudy-blue-sky-for-8bit-game-on-white-background-vector.jpg")));
+        BackGround->setPixmap(QPixmap(QString::fromUtf8(":/Decor/Image_Qt/Decor/Ciel_menu.jpg")));
         BackGround->setScaledContents(true);
         Retour = new QLabel(ChoixJoueur);
         Retour->setObjectName("Retour");

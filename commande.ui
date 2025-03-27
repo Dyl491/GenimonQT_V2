@@ -251,7 +251,7 @@
     <enum>Qt::TextFormat::PlainText</enum>
    </property>
    <property name="pixmap">
-    <pixmap resource="Image.qrc">:/MainMenu/Image_Qt/EcranAccueil/pixel-art-sky-background-with-clouds-cloudy-blue-sky-for-8bit-game-on-white-background-vector.jpg</pixmap>
+    <pixmap resource="Image.qrc">:/Decor/Image_Qt/Decor/Ciel_menu.jpg</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -577,7 +577,7 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>Retour au menu (2)</string>
+    <string>Retour au menu</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignmentFlag::AlignCenter</set>

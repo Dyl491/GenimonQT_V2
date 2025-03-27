@@ -44,7 +44,7 @@ public:
         BackGround->setAutoFillBackground(true);
         BackGround->setFrameShape(QFrame::Shape::Box);
         BackGround->setTextFormat(Qt::TextFormat::PlainText);
-        BackGround->setPixmap(QPixmap(QString::fromUtf8(":/Decor/Image_Qt/Decor/5a8.png")));
+        BackGround->setPixmap(QPixmap(QString::fromUtf8(":/Decor/Image_Qt/Decor/School-Map-8bit.png")));
         BackGround->setScaledContents(true);
 
         retranslateUi(Map);

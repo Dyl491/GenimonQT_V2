@@ -110,7 +110,7 @@ public:
         BackGround->setAutoFillBackground(true);
         BackGround->setFrameShape(QFrame::Shape::Box);
         BackGround->setTextFormat(Qt::TextFormat::PlainText);
-        BackGround->setPixmap(QPixmap(QString::fromUtf8(":/MainMenu/Image_Qt/EcranAccueil/pixel-art-sky-background-with-clouds-cloudy-blue-sky-for-8bit-game-on-white-background-vector.jpg")));
+        BackGround->setPixmap(QPixmap(QString::fromUtf8(":/Decor/Image_Qt/Decor/Ciel_menu.jpg")));
         BackGround->setScaledContents(true);
         ClavierS = new QLabel(Commande);
         ClavierS->setObjectName("ClavierS");
@@ -240,7 +240,7 @@ public:
         ManetteB4->setText(QCoreApplication::translate("Commande", "Bouton4", nullptr));
         TitreClavier->setText(QCoreApplication::translate("Commande", "Equivalent Clavier", nullptr));
         ClavierD->setText(QCoreApplication::translate("Commande", "D", nullptr));
-        Retour1->setText(QCoreApplication::translate("Commande", "Retour au menu (2)", nullptr));
+        Retour1->setText(QCoreApplication::translate("Commande", "Retour au menu", nullptr));
     } // retranslateUi
 
 };
