@@ -75,6 +75,8 @@
     <bool>true</bool>
    </property>
   </widget>
+  <zorder>BackGround</zorder>
+  <zorder>NomPerso</zorder>
  </widget>
  <resources>
   <include location="Image.qrc"/>

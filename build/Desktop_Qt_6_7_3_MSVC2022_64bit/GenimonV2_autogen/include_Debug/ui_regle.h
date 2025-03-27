@@ -77,7 +77,7 @@ public:
         Reglement->setText(QCoreApplication::translate("Regle", "<html><head/><body><p align=\"center\">Bienvenue dans Genimon!</p><p align=\"center\">Promenez-vous dans la facult\303\251 de g\303\251nie et rencontrez des</p><p align=\"center\">Genimons. Attrapez-les avec des balles pour les ajouter \303\240 votre</p><p align=\"center\">Genidex ou combattez-les pour tentez de gagner plus de balles.</p><p align=\"center\">Une aventure passionnante vous attend.</p><p align=\"center\">Bonne chasse!</p></body></html>", nullptr));
         RegleTitre->setText(QCoreApplication::translate("Regle", "<html><head/><body><p><span style=\" font-size:22pt;\">D\303\251roulement du jeu</span></p></body></html>", nullptr));
         BackGround->setText(QString());
-        Retour->setText(QCoreApplication::translate("Regle", "Retour au menu", nullptr));
+        Retour->setText(QCoreApplication::translate("Regle", "Retour au menu (2)", nullptr));
     } // retranslateUi
 
 };

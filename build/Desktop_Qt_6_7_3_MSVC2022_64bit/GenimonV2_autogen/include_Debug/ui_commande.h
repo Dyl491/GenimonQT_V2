@@ -240,7 +240,7 @@ public:
         ManetteB4->setText(QCoreApplication::translate("Commande", "Bouton4", nullptr));
         TitreClavier->setText(QCoreApplication::translate("Commande", "Equivalent Clavier", nullptr));
         ClavierD->setText(QCoreApplication::translate("Commande", "D", nullptr));
-        Retour1->setText(QCoreApplication::translate("Commande", "Retour au menu", nullptr));
+        Retour1->setText(QCoreApplication::translate("Commande", "Retour au menu (2)", nullptr));
     } // retranslateUi
 
 };

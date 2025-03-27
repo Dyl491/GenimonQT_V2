@@ -46,6 +46,8 @@ public:
         BackGround->setTextFormat(Qt::TextFormat::PlainText);
         BackGround->setPixmap(QPixmap(QString::fromUtf8(":/Decor/Image_Qt/Decor/School-Map-8bit.png")));
         BackGround->setScaledContents(true);
+        BackGround->raise();
+        NomPerso->raise();
 
         retranslateUi(Map);
 

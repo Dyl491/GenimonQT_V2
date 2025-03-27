@@ -15,4 +15,8 @@ Regle::~Regle()
 
 void Regle::handleKeyPress(int key) {
 
+    if (key == Qt::Key_2) {
+        emit requestMenuChange(0); //Passer au menu principal
+        clearFocus();
+    }
 }

@@ -1,7 +1,10 @@
 #include "choixjoueur.h"
 #include "ui_choixjoueur.h"
+#include "controle.h"
 #include <QKeyEvent>
 #include <QDebug>
+
+extern Controle *controle;
 
 ChoixJoueur::ChoixJoueur(QWidget *parent)
     : QWidget(parent)
@@ -48,6 +51,7 @@ void ChoixJoueur::handleKeyPress(int key) {
         etat = 1;
     }
     updateQuiz();
+
 }
 
 
@@ -202,6 +206,7 @@ void ChoixJoueur::updateQuiz() {
         if (Clavier1)
         {
             Clavier1 =0;
+            emit sendNomJoueur(nomJoueur); //Envoyer le nom du joueur a la classe map
             emit requestMenuChange(2); //Passer au menu map
         }
 

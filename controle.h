@@ -5,6 +5,15 @@
 #include <QStackedWidget>
 #include <QKeyEvent>
 
+#include "capture.h"
+#include "choixjoueur.h"
+#include "combat.h"
+#include "commande.h"
+#include "genidex.h"
+#include "historencontre.h"
+#include "map.h"
+#include "regle.h"
+
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class Controle;
@@ -25,6 +34,15 @@ protected:
 private:
     Ui::Controle *ui;
     QStackedWidget *stackedWidget;
+
+    ChoixJoueur* choixJoueurMenu;
+    Map* mapMenu;
+    Capture* captureMenu;
+    Combat* combatMenu;
+    Genidex* genidexMenu;
+    HistoRencontre* histoRencontreMenu;
+    Commande* commandeMenu;
+    Regle* regleMenu;
 
     void changeMenu(int index);
 

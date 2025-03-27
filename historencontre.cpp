@@ -14,5 +14,7 @@ HistoRencontre::~HistoRencontre()
 }
 
 void HistoRencontre::handleKeyPress(int key) {
-
+    if (key == Qt::Key_4) {
+        emit requestMenuChange(2); //Passer au menu map
+    }
 }

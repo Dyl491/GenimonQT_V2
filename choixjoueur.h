@@ -30,6 +30,7 @@ private:
 
 signals:
     void requestMenuChange(int index);  // Signal pour demander un changement de menu
+    void sendNomJoueur(const QString &nom); // Signal pour envoyer le nom choisi du joueur a map
 };
 
 #endif // CHOIXJOUEUR_H
