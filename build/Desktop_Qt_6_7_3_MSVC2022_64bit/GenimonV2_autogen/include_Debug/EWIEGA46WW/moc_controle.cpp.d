@@ -185,10 +185,12 @@ C:/Users/dylan/OneDrive/Documents/Qt\ project/GenimonV2/build/Desktop_Qt_6_7_3_M
   C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/qtwidgetsglobal.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/qwidget.h \
   C:/Users/dylan/OneDrive/Documents/Qt\ project/GenimonV2/capture.h \
+  C:/Users/dylan/OneDrive/Documents/Qt\ project/GenimonV2/choixaction.h \
   C:/Users/dylan/OneDrive/Documents/Qt\ project/GenimonV2/choixjoueur.h \
   C:/Users/dylan/OneDrive/Documents/Qt\ project/GenimonV2/combat.h \
   C:/Users/dylan/OneDrive/Documents/Qt\ project/GenimonV2/commande.h \
   C:/Users/dylan/OneDrive/Documents/Qt\ project/GenimonV2/genidex.h \
   C:/Users/dylan/OneDrive/Documents/Qt\ project/GenimonV2/historencontre.h \
   C:/Users/dylan/OneDrive/Documents/Qt\ project/GenimonV2/map.h \
+  C:/Users/dylan/OneDrive/Documents/Qt\ project/GenimonV2/pause.h \
   C:/Users/dylan/OneDrive/Documents/Qt\ project/GenimonV2/regle.h

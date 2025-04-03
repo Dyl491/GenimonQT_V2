@@ -23,6 +23,10 @@
         <file>Image_Qt/Decor/School-Map-8bit.png</file>
         <file>Image_Qt/Decor/School-Map-8bit_5a8.png</file>
         <file>Image_Qt/Decor/Transition combat.png</file>
+        <file>Image_Qt/Decor/Cafeteria.jpeg</file>
+        <file>Image_Qt/Decor/Cafeteria_5a8.jpeg</file>
+        <file>Image_Qt/Decor/Paysage.png</file>
+        <file>Image_Qt/Decor/School-Map-withoutPeople-8bit.jpeg</file>
     </qresource>
     <qresource prefix="/Elec">
         <file>Image_Qt/Elec/Emy_finale-removebg-preview.png</file>

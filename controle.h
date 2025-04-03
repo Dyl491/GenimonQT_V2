@@ -13,6 +13,8 @@
 #include "historencontre.h"
 #include "map.h"
 #include "regle.h"
+#include "pause.h"
+#include "choixaction.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -43,6 +45,8 @@ private:
     HistoRencontre* histoRencontreMenu;
     Commande* commandeMenu;
     Regle* regleMenu;
+    Pause* pauseMenu;
+    ChoixAction* choixActionMenu;
 
     void changeMenu(int index);
 

@@ -22,6 +22,8 @@ Controle::Controle(QWidget *parent)
     stackedWidget->addWidget(new HistoRencontre(this)); // Index 6
     stackedWidget->addWidget(new Commande(this)); // Index 7
     stackedWidget->addWidget(new Regle(this)); // Index 8
+    stackedWidget->addWidget(new Pause(this)); // Index 9
+    stackedWidget->addWidget(new ChoixAction(this)); // Index 10
     setCentralWidget(stackedWidget);
 
     choixJoueurMenu = qobject_cast<ChoixJoueur*>(stackedWidget->widget(1));
@@ -32,6 +34,8 @@ Controle::Controle(QWidget *parent)
     histoRencontreMenu = qobject_cast<HistoRencontre*>(stackedWidget->widget(6));
     commandeMenu = qobject_cast<Commande*>(stackedWidget->widget(7));
     regleMenu = qobject_cast<Regle*>(stackedWidget->widget(8));
+    pauseMenu = qobject_cast<Pause*>(stackedWidget->widget(9));
+    choixActionMenu = qobject_cast<ChoixAction*>(stackedWidget->widget(10));
 
     //Permet d'envoyer nom joueur de choixJoueur a Map
     connect(choixJoueurMenu, &ChoixJoueur::sendNomJoueur, mapMenu, &Map::setNomJoueur);
@@ -112,6 +116,15 @@ void Controle::keyPressEvent(QKeyEvent *event) {
             emit sendKeyPress(event->key()); // Émettre le signal avec la touche pressée
         }
 
+    }else if (stackedWidget->currentIndex() == 9) // Menu Pause
+    {
+
+    }else if (stackedWidget->currentIndex() == 10) // Menu ChoixAction
+    {
+        if (event->key() == Qt::Key_1 || event->key() == Qt::Key_2 || event->key() == Qt::Key_3) {
+            emit sendKeyPress(event->key()); // Émettre le signal avec la touche pressée
+        }
+
     }
 
 }
@@ -139,6 +152,9 @@ void Controle::changeMenu(int index) {
     disconnect(this, &Controle::sendKeyPress, regleMenu, &Regle::handleKeyPress);
     disconnect(regleMenu, &Regle::requestMenuChange, this, &Controle::changeMenu);
 
+    disconnect(this, &Controle::sendKeyPress, choixActionMenu, &ChoixAction::handleKeyPress);
+    disconnect(choixActionMenu, &ChoixAction::requestMenuChange, this, &Controle::changeMenu);
+
 
 // Relier commande clavier et de changement de menu aux autres menus.
     if(index == 1){
@@ -165,6 +181,11 @@ void Controle::changeMenu(int index) {
     }else if(index == 8){
         connect(this, &Controle::sendKeyPress, regleMenu, &Regle::handleKeyPress);
         connect(regleMenu, &Regle::requestMenuChange, this, &Controle::changeMenu);
+    }else if(index == 9){
+
+    }else if(index == 10){
+        connect(this, &Controle::sendKeyPress, choixActionMenu, &ChoixAction::handleKeyPress);
+        connect(choixActionMenu, &ChoixAction::requestMenuChange, this, &Controle::changeMenu);
     }
 }
 

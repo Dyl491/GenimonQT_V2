@@ -37,7 +37,16 @@
     <ClCompile Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\mainmenu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\pause.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\choixaction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\EWIEGA46WW\qrc_Image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\EWIEGA46WW\qrc_Music.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\mocs_compilation_Release.cpp">
@@ -81,6 +90,12 @@
     <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\mainmenu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\pause.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\choixaction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_Debug\ui_controle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -109,6 +124,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_Debug\ui_mainmenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_Debug\ui_pause.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_Debug\ui_choixaction.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_Release\ui_controle.h">
@@ -141,6 +162,12 @@
     <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_Release\ui_mainmenu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_Release\ui_pause.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_Release\ui_choixaction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_MinSizeRel\ui_controle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -169,6 +196,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_MinSizeRel\ui_mainmenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_MinSizeRel\ui_pause.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_MinSizeRel\ui_choixaction.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_RelWithDebInfo\ui_controle.h">
@@ -201,12 +234,21 @@
     <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_RelWithDebInfo\ui_mainmenu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_RelWithDebInfo\ui_pause.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\include_RelWithDebInfo\ui_choixaction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\CMakeFiles\0fdc2009d360f3b8533da26de9bc8c26\autouic_(CONFIG).stamp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
     <CustomBuild Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\CMakeFiles\4b587c0fb647b28aacd47acfc07d8862\qrc_Image.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\CMakeFiles\4b587c0fb647b28aacd47acfc07d8862\qrc_Music.cpp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
     <CustomBuild Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\CMakeLists.txt" />
@@ -243,6 +285,15 @@
       <Filter>Resources</Filter>
     </None>
     <None Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\mainmenu.ui">
+      <Filter>Forms</Filter>
+    </None>
+    <None Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\pause.ui">
+      <Filter>Forms</Filter>
+    </None>
+    <None Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\Music.qrc">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\choixaction.ui">
       <Filter>Forms</Filter>
     </None>
     <None Include="C:\Users\dylan\OneDrive\Documents\Qt project\GenimonV2\build\Desktop_Qt_6_7_3_MSVC2022_64bit\GenimonV2_autogen\autouic_Debug.stamp" />
