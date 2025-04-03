@@ -82,6 +82,9 @@ void Controle::keyPressEvent(QKeyEvent *event) {
 
     }else if (stackedWidget->currentIndex() == 4) // Menu Combat
     {
+        if (event->key() == Qt::Key_1 || event->key() == Qt::Key_2 || event->key() == Qt::Key_3 || event->key() == Qt::Key_4) {
+            emit sendKeyPress(event->key()); // Émettre le signal avec la touche pressée
+        }
 
     }else if (stackedWidget->currentIndex() == 5) // Menu Genidex
     {

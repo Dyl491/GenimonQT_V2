@@ -33,10 +33,10 @@ void ChoixJoueur::handleKeyPress(int key) {
     if (etat != 0) {
         if (key == Qt::Key_1) {
             Clavier1 = true;
-            qDebug() << "Clavier1 (Oui) détecté";
+            //qDebug() << "Clavier1 (Oui) détecté";
         } else if (key == Qt::Key_2) {
             Clavier2 = true;
-            qDebug() << "Clavier2 (Non) détecté";
+            //qDebug() << "Clavier2 (Non) détecté";
         }
     }else{
         Clavier1 = false;
@@ -46,7 +46,7 @@ void ChoixJoueur::handleKeyPress(int key) {
     if (etat == 0 && key == Qt::Key_Escape) {
         nomJoueur = ui->NomChoisi->text();
         ui->NomChoisi->clearFocus();
-        qDebug() << "Nom validé par Escape :" << nomJoueur;
+        //qDebug() << "Nom validé par Escape :" << nomJoueur;
 
         etat = 1;
     }

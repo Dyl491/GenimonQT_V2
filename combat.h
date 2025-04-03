@@ -2,6 +2,7 @@
 #define COMBAT_H
 
 #include <QWidget>
+#include <QTimer>
 
 namespace Ui {
 class Combat;
@@ -20,6 +21,11 @@ public slots:
 
 private:
     Ui::Combat *ui;
+    QTimer *TransTimer;
+    void transition();
+    void combat();
+    void info();
+    void showEvent(QShowEvent *event);
 
 signals:
     void requestMenuChange(int index);  // Signal pour demander un changement de menu
