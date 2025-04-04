@@ -1,8 +1,10 @@
 C:/Users/dylan/OneDrive/Documents/Qt\ project/GenimonV2/build/Desktop_Qt_6_7_3_MSVC2022_64bit/GenimonV2_autogen/include_Debug/EWIEGA46WW/moc_capture.cpp: C:/Users/dylan/OneDrive/Documents/Qt\ project/GenimonV2/capture.h \
+  C:/Qt/6.7.3/msvc2022_64/include/QtCore/QPropertyAnimation \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/q20functional.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/q20memory.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/q20type_traits.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/q23utility.h \
+  C:/Qt/6.7.3/msvc2022_64/include/QtCore/qabstractanimation.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qalgorithms.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qanystringview.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qarraydata.h \
@@ -31,6 +33,7 @@ C:/Users/dylan/OneDrive/Documents/Qt\ project/GenimonV2/build/Desktop_Qt_6_7_3_M
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qdarwinhelpers.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qdatastream.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qdebug.h \
+  C:/Qt/6.7.3/msvc2022_64/include/QtCore/qeasingcurve.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qendian.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qexceptionhandling.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qflags.h \
@@ -67,6 +70,7 @@ C:/Users/dylan/OneDrive/Documents/Qt\ project/GenimonV2/build/Desktop_Qt_6_7_3_M
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qpair.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qpoint.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qprocessordetection.h \
+  C:/Qt/6.7.3/msvc2022_64/include/QtCore/qpropertyanimation.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qrect.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qrefcount.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qscopedpointer.h \
@@ -112,6 +116,7 @@ C:/Users/dylan/OneDrive/Documents/Qt\ project/GenimonV2/build/Desktop_Qt_6_7_3_M
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qtypes.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qutf8stringview.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qvariant.h \
+  C:/Qt/6.7.3/msvc2022_64/include/QtCore/qvariantanimation.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qvarlengtharray.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qversiontagging.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qxptype_traits.h \

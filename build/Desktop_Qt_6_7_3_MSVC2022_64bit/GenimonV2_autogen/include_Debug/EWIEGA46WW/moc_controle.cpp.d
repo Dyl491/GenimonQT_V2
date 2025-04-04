@@ -1,6 +1,7 @@
 C:/Users/dylan/OneDrive/Documents/Qt\ project/GenimonV2/build/Desktop_Qt_6_7_3_MSVC2022_64bit/GenimonV2_autogen/include_Debug/EWIEGA46WW/moc_controle.cpp: C:/Users/dylan/OneDrive/Documents/Qt\ project/GenimonV2/controle.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/QList \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/QObject \
+  C:/Qt/6.7.3/msvc2022_64/include/QtCore/QPropertyAnimation \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/QRect \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/QSize \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/QSizeF \
@@ -9,6 +10,7 @@ C:/Users/dylan/OneDrive/Documents/Qt\ project/GenimonV2/build/Desktop_Qt_6_7_3_M
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/q20memory.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/q20type_traits.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/q23utility.h \
+  C:/Qt/6.7.3/msvc2022_64/include/QtCore/qabstractanimation.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qalgorithms.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qanystringview.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qarraydata.h \
@@ -42,6 +44,7 @@ C:/Users/dylan/OneDrive/Documents/Qt\ project/GenimonV2/build/Desktop_Qt_6_7_3_M
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qdatastream.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qdeadlinetimer.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qdebug.h \
+  C:/Qt/6.7.3/msvc2022_64/include/QtCore/qeasingcurve.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qelapsedtimer.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qendian.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qeventloop.h \
@@ -83,6 +86,7 @@ C:/Users/dylan/OneDrive/Documents/Qt\ project/GenimonV2/build/Desktop_Qt_6_7_3_M
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qpair.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qpoint.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qprocessordetection.h \
+  C:/Qt/6.7.3/msvc2022_64/include/QtCore/qpropertyanimation.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qrect.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qrefcount.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qscopedpointer.h \
@@ -130,6 +134,7 @@ C:/Users/dylan/OneDrive/Documents/Qt\ project/GenimonV2/build/Desktop_Qt_6_7_3_M
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qurl.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qutf8stringview.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qvariant.h \
+  C:/Qt/6.7.3/msvc2022_64/include/QtCore/qvariantanimation.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qvarlengtharray.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qversiontagging.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qxptype_traits.h \
