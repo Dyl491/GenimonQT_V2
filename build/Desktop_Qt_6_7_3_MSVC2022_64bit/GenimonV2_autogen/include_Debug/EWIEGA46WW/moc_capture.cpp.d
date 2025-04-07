@@ -1,5 +1,6 @@
 C:/Users/dylan/OneDrive/Documents/Qt\ project/GenimonV2/build/Desktop_Qt_6_7_3_MSVC2022_64bit/GenimonV2_autogen/include_Debug/EWIEGA46WW/moc_capture.cpp: C:/Users/dylan/OneDrive/Documents/Qt\ project/GenimonV2/capture.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/QPropertyAnimation \
+  C:/Qt/6.7.3/msvc2022_64/include/QtCore/QTimer \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/q20functional.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/q20memory.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/q20type_traits.h \
@@ -14,6 +15,7 @@ C:/Users/dylan/OneDrive/Documents/Qt\ project/GenimonV2/build/Desktop_Qt_6_7_3_M
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qatomic.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qatomic_cxx11.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qbasicatomic.h \
+  C:/Qt/6.7.3/msvc2022_64/include/QtCore/qbasictimer.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qbindingstorage.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qbytearray.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qbytearrayalgorithms.h \
@@ -104,6 +106,7 @@ C:/Users/dylan/OneDrive/Documents/Qt\ project/GenimonV2/build/Desktop_Qt_6_7_3_M
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qtdeprecationmarkers.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qtenvironmentvariables.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qtextstream.h \
+  C:/Qt/6.7.3/msvc2022_64/include/QtCore/qtimer.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qtmetamacros.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qtnoop.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qtpreprocessorsupport.h \

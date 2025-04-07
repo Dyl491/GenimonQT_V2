@@ -304,6 +304,9 @@ Qt6Multimedia_DIR:PATH=C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6Multimedia
 //The directory containing a CMake configuration file for Qt6Network.
 Qt6Network_DIR:PATH=C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6Network
 
+//The directory containing a CMake configuration file for Qt6SerialPort.
+Qt6SerialPort_DIR:PATH=C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6SerialPort
+
 //The directory containing a CMake configuration file for Qt6WidgetsTools.
 Qt6WidgetsTools_DIR:PATH=C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6WidgetsTools
 
@@ -932,6 +935,8 @@ QT_FEATURE_networkproxy:INTERNAL=ON
 QT_FEATURE_no_direct_extern_access:INTERNAL=OFF
 //Qt feature: no_pkg_config (from target Qt6::Core)
 QT_FEATURE_no_pkg_config:INTERNAL=ON
+//Qt feature: ntddmodm (from target Qt6::SerialPort)
+QT_FEATURE_ntddmodm:INTERNAL=ON
 //Qt feature: ocsp (from target Qt6::Network)
 QT_FEATURE_ocsp:INTERNAL=ON
 //Qt feature: opengl (from target Qt6::Gui)

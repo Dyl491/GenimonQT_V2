@@ -345,6 +345,40 @@
 		"C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6Multimedia/Qt6QWindowsMediaPluginTargets-debug.cmake",
 		"C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6Multimedia/Qt6QWindowsMediaPluginTargets-relwithdebinfo.cmake",
 		"C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6Multimedia/Qt6QWindowsMediaPluginAdditionalTargetInfo.cmake",
+		"C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
+		"C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
+		"C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6/Qt6Config.cmake",
+		"C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6/Qt6ConfigExtras.cmake",
+		"C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake",
+		"C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6/Qt6Targets.cmake",
+		"C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6/Qt6VersionlessTargets.cmake",
+		"C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6/QtFeature.cmake",
+		"C:/mingw64/share/cmake-3.30/Modules/CheckCXXCompilerFlag.cmake",
+		"C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6/QtFeatureCommon.cmake",
+		"C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6/QtPublicAppleHelpers.cmake",
+		"C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake",
+		"C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake",
+		"C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
+		"C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6/QtPublicExternalProjectHelpers.cmake",
+		"C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake",
+		"C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake",
+		"C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6/QtPublicPluginHelpers.cmake",
+		"C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6/QtPublicTargetHelpers.cmake",
+		"C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6/QtPublicTestHelpers.cmake",
+		"C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6/QtPublicToolHelpers.cmake",
+		"C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake",
+		"C:/mingw64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
+		"C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6/Qt6Dependencies.cmake",
+		"C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6SerialPort/Qt6SerialPortConfigVersion.cmake",
+		"C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6SerialPort/Qt6SerialPortConfigVersionImpl.cmake",
+		"C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6SerialPort/Qt6SerialPortConfig.cmake",
+		"C:/mingw64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
+		"C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6SerialPort/Qt6SerialPortDependencies.cmake",
+		"C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6SerialPort/Qt6SerialPortTargets.cmake",
+		"C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6SerialPort/Qt6SerialPortTargets-debug.cmake",
+		"C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6SerialPort/Qt6SerialPortTargets-relwithdebinfo.cmake",
+		"C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6SerialPort/Qt6SerialPortAdditionalTargetInfo.cmake",
+		"C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6SerialPort/Qt6SerialPortVersionlessTargets.cmake",
 		"C:/mingw64/share/cmake-3.30/Modules/GNUInstallDirs.cmake",
 		"C:/Users/dylan/OneDrive/Documents/Qt project/GenimonV2/Image.qrc",
 		"C:/Users/dylan/OneDrive/Documents/Qt project/GenimonV2/Music.qrc"
@@ -446,6 +480,7 @@
 		"QT_GUI_LIB",
 		"QT_MULTIMEDIA_LIB",
 		"QT_NETWORK_LIB",
+		"QT_SERIALPORT_LIB",
 		"QT_WIDGETS_LIB",
 		"UNICODE",
 		"WIN32",
@@ -461,6 +496,7 @@
 		"QT_MULTIMEDIA_LIB",
 		"QT_NETWORK_LIB",
 		"QT_NO_DEBUG",
+		"QT_SERIALPORT_LIB",
 		"QT_WIDGETS_LIB",
 		"UNICODE",
 		"WIN32",
@@ -476,6 +512,7 @@
 		"QT_MULTIMEDIA_LIB",
 		"QT_NETWORK_LIB",
 		"QT_NO_DEBUG",
+		"QT_SERIALPORT_LIB",
 		"QT_WIDGETS_LIB",
 		"UNICODE",
 		"WIN32",
@@ -491,6 +528,7 @@
 		"QT_MULTIMEDIA_LIB",
 		"QT_NETWORK_LIB",
 		"QT_NO_DEBUG",
+		"QT_SERIALPORT_LIB",
 		"QT_WIDGETS_LIB",
 		"UNICODE",
 		"WIN32",
@@ -515,7 +553,8 @@
 		"C:/Qt/6.7.3/msvc2022_64/include/QtWidgets",
 		"C:/Qt/6.7.3/msvc2022_64/include/QtGui",
 		"C:/Qt/6.7.3/msvc2022_64/include/QtMultimedia",
-		"C:/Qt/6.7.3/msvc2022_64/include/QtNetwork"
+		"C:/Qt/6.7.3/msvc2022_64/include/QtNetwork",
+		"C:/Qt/6.7.3/msvc2022_64/include/QtSerialPort"
 	],
 	"MOC_INCLUDES_MinSizeRel" : 
 	[
@@ -525,7 +564,8 @@
 		"C:/Qt/6.7.3/msvc2022_64/include/QtWidgets",
 		"C:/Qt/6.7.3/msvc2022_64/include/QtGui",
 		"C:/Qt/6.7.3/msvc2022_64/include/QtMultimedia",
-		"C:/Qt/6.7.3/msvc2022_64/include/QtNetwork"
+		"C:/Qt/6.7.3/msvc2022_64/include/QtNetwork",
+		"C:/Qt/6.7.3/msvc2022_64/include/QtSerialPort"
 	],
 	"MOC_INCLUDES_RelWithDebInfo" : 
 	[
@@ -535,7 +575,8 @@
 		"C:/Qt/6.7.3/msvc2022_64/include/QtWidgets",
 		"C:/Qt/6.7.3/msvc2022_64/include/QtGui",
 		"C:/Qt/6.7.3/msvc2022_64/include/QtMultimedia",
-		"C:/Qt/6.7.3/msvc2022_64/include/QtNetwork"
+		"C:/Qt/6.7.3/msvc2022_64/include/QtNetwork",
+		"C:/Qt/6.7.3/msvc2022_64/include/QtSerialPort"
 	],
 	"MOC_INCLUDES_Release" : 
 	[
@@ -545,7 +586,8 @@
 		"C:/Qt/6.7.3/msvc2022_64/include/QtWidgets",
 		"C:/Qt/6.7.3/msvc2022_64/include/QtGui",
 		"C:/Qt/6.7.3/msvc2022_64/include/QtMultimedia",
-		"C:/Qt/6.7.3/msvc2022_64/include/QtNetwork"
+		"C:/Qt/6.7.3/msvc2022_64/include/QtNetwork",
+		"C:/Qt/6.7.3/msvc2022_64/include/QtSerialPort"
 	],
 	"MOC_MACRO_NAMES" : 
 	[

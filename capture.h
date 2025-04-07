@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QPropertyAnimation>
+#include <QTimer>
 
 namespace Ui {
 class Capture;
@@ -24,6 +25,7 @@ private:
     QPropertyAnimation *animation;
 
     void animPokeball();
+    void animCapture();
 
 
 signals:
