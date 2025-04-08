@@ -10,10 +10,13 @@
 
 
 
+
 Controle::Controle(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::Controle)
     , stackedWidget(new QStackedWidget(this))
+    , serialPort(new QSerialPort(this))
+    , sendDataTimer(new QTimer(this))
 {
     ui->setupUi(this);
 
@@ -44,6 +47,8 @@ Controle::Controle(QWidget *parent)
 
     //Permet d'envoyer nom joueur de choixJoueur a Map
     connect(choixJoueurMenu, &ChoixJoueur::sendNomJoueur, mapMenu, &Map::setNomJoueur);
+
+    connectToArduino();
 
 }
 
@@ -83,6 +88,8 @@ void Controle::keyPressEvent(QKeyEvent *event) {
         default:
             QMainWindow::keyPressEvent(event);
         }
+
+
     }else if (stackedWidget->currentIndex() == 1) // Menu ChoixJoueur
     {
         if (event->key() == Qt::Key_1 || event->key() == Qt::Key_2 || event->key() == Qt::Key_Escape) {
@@ -235,6 +242,8 @@ void Controle::connectToArduino() {
         if (serialPort->open(QIODevice::ReadWrite)) {
             qDebug() << "Connecté à l'Arduino sur le port" << info.portName();
             connected = true;
+
+            connect(serialPort, &QSerialPort::readyRead, this, [this]() {SendToSerial(MESSAGE, SEGMENT);});
             break;  // Sortir dès que la connexion est établie
         } else {
             qDebug() << "Échec de la connexion au port" << info.portName();
@@ -244,10 +253,6 @@ void Controle::connectToArduino() {
     if (!connected) {
         // Si la connexion échoue, affichez un message à l'utilisateur
         qDebug() << "Erreur de connexion, Échec de la connexion à l'Arduino. Vérifiez le câble et réessayez.";
-    }else{
-        //Lier communication manette
-        connect(serialPort, &QSerialPort::readyRead, this, &Controle::RcvFromSerial);
-        connect(sendDataTimer, &QTimer::timeout, this, [this]() {SendToSerial(MESSAGE, SEGMENT);});
     }
 }
 
@@ -273,35 +278,33 @@ void Controle::RcvFromSerial() {
     QJsonObject jsonObject;
 
     // Lire les données du port série
-    // Lire toutes les données disponibles
     buffer.append(serialPort->readAll());
-    qDebug() << "Données lues:" << buffer;
-    qDebug() << "Lire les données du port série" << buffer;
 
-    // Vérifier si nous avons un message complet (terminé par un '\n')
-    int endIndex = buffer.indexOf('}');
-    if (endIndex != -1) {
-        QByteArray data = buffer.left(endIndex);  // Extraire le message complet
-        buffer.remove(0, endIndex + 1);  // Supprimer le message du tampon
+    // Parcourir le tampon et chercher des messages JSON complets
+    while (true) {
+        int startIndex = buffer.indexOf('{');  // Cherche le début d'un message JSON
+        int endIndex = buffer.indexOf('}');    // Cherche la fin d'un message JSON
+        buffer = buffer.trimmed();
 
-        // Si les données sont en format JSON, on les analyse
-        QJsonDocument doc = QJsonDocument::fromJson(data);
-        if (doc.isNull()) {
-            qDebug() << "Erreur : Le JSON est mal formé.";
-            return;
-        } else {
+        if (startIndex != -1 && endIndex != -1 && endIndex > startIndex) {
+            QByteArray jsonData = buffer.mid(startIndex, endIndex - startIndex + 1);  // Extraire le message JSON complet
+            buffer.remove(0, endIndex + 1);  // Supprimer ce message du tampon
+
+            // Analyse du JSON
+            QJsonDocument doc = QJsonDocument::fromJson(jsonData);
+            if (doc.isNull()) {
+                qDebug() << "Erreur : Le JSON est mal formé.";
+                continue;  // Passer au prochain message si celui-ci est mal formé
+            }
+
+            // Traitement du message JSON
             if (doc.isObject()) {
                 jsonObject = doc.object();
-                qDebug() << "C'est un objet JSON";
-                qDebug() << "Émission du signal dataReceived";
-            }else if (doc.isArray()) {
-                QJsonArray jsonArray = doc.array();
-                qDebug() << "C'est un tableau JSON";
-                jsonObject["array"] = jsonArray;
-            }else {
-                QVariant value = doc.toVariant();
-                qDebug() << "C'est une valeur simple:" << value;
+                qDebug() << "Données reçues:" << jsonObject;
+                // Traitement des données JSON ici
             }
+        } else {
+            break;  // Sortir si aucun message JSON complet n'est trouvé
         }
     }
 
@@ -319,31 +322,45 @@ void Controle::RcvFromSerial() {
     if (jsonObject.contains("muons")) {
         MUONS = jsonObject["muons"].toInt();
     }
-
-    qDebug() << "manette :" << BOUTTONS << JOYSTICK << ACCELEROMETRE << MUONS;
-
-    sendDataTimer->start(100);
-
 }
 
 
 
 void Controle::SendToSerial(const QString &message, int segment) {
-    QJsonObject jsonObject;
-    jsonObject["message"] = message;
-    jsonObject["segment"] = segment;
 
-    // Convertir l'objet JSON en QByteArray
-    QJsonDocument doc(jsonObject);
-    QByteArray jsonData = doc.toJson();
-
-    // Envoyer le message JSON via le port série
     if (serialPort->isOpen()) {
-        serialPort->write(jsonData);
-        qDebug() << "Message envoyé à l'Arduino:" << jsonData;
-    } else {
-        qDebug() << "Erreur : Port série non ouvert.";
+        QJsonObject jsonObject;
+
+        if (lastSend ==0){
+            jsonObject["messageLCD"] = message;
+            lastSend =1;
+        }else if (lastSend ==1){
+            jsonObject["nbSeg"] = segment;
+            lastSend =0;
+        }
+
+
+        // Convertir l'objet JSON en QByteArray
+        QJsonDocument doc(jsonObject);
+        QByteArray jsonData = doc.toJson(QJsonDocument::Compact);
+        // Ajouter un caractère de nouvelle ligne à la fin
+        jsonData.append('\n');  // Ajoute le caractère de nouvelle ligne
+
+        //qDebug() << "Octets envoyés au port série (hex) : " << jsonData.toHex();
+
+        // Envoyer le message JSON via le port série
+        if (serialPort->isOpen()) {
+            serialPort->write(jsonData);
+            qDebug() << "Message envoyé à l'Arduino:" << QString::fromUtf8(jsonData).simplified();
+        } else {
+            qDebug() << "Erreur : Port série non ouvert.";
+        }
+
+        // Attendre une réponse de l'Arduino avant de continuer
+        serialPort->waitForReadyRead(150);
+        RcvFromSerial();
     }
+
 }
 
 

@@ -68,6 +68,7 @@ private:
     int MUONS =0;
     QString MESSAGE = "Je communique";
     int SEGMENT = 4;
+    bool lastSend =0;
 
 signals:
     void sendKeyPress(int key); // Signal pour envoyer les touches clavier

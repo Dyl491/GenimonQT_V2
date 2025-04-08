@@ -1,7 +1,6 @@
 #include "capture.h"
 #include "ui_capture.h"
 #include <QEasingCurve>
-#include <QTransform>
 
 Capture::Capture(QWidget *parent)
     : QWidget(parent)
