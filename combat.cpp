@@ -17,9 +17,30 @@ Combat::~Combat()
 }
 
 void Combat::handleKeyPress(int key) {
-    if (key == Qt::Key_1 || key == Qt::Key_2 || key == Qt::Key_3 || key == Qt::Key_4) {
 
+    if (key == Qt::Key_1) {
+        BOUTONS = 1;
+    }else if (key == Qt::Key_2) {
+        BOUTONS = 2;
+    }else if (key == Qt::Key_3) {
+        BOUTONS = 3;
+    }else if (key == Qt::Key_4) {
+        BOUTONS = 4;
     }
+
+    if (key == Qt::Key_W){
+        JOYSTICKS = 1;
+    }else if (key == Qt::Key_D){
+        JOYSTICKS = 2;
+    }else if (key == Qt::Key_S){
+        JOYSTICKS = 3;
+    }else if (key == Qt::Key_A){
+        JOYSTICKS = 4;
+    }else{
+        JOYSTICKS = 0;
+    }
+
+    update();
 }
 
 void Combat::handleArduinoInput(int boutons, int joystick, int accelerometre, int muons){
@@ -46,7 +67,15 @@ void Combat::handleArduinoInput(int boutons, int joystick, int accelerometre, in
 
     ACCEL = accelerometre;
     MUONS = muons;
+
+    update();
 }
+
+void Combat::update(){
+
+}
+
+
 
 void Combat::showEvent(QShowEvent *event) {
 

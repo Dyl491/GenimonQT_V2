@@ -21,22 +21,20 @@ class Ui_Commande
 public:
     QLabel *ClavierW;
     QLabel *ClavierH;
-    QLabel *AccelZ;
+    QLabel *Accel;
     QLabel *ManetteB3;
     QLabel *ManetteB1;
     QLabel *TitreManette;
-    QLabel *AccelX;
     QLabel *BackGround;
     QLabel *ClavierS;
     QLabel *ManetteJoy;
     QLabel *ClavierA;
-    QLabel *AccelY;
-    QLabel *ManetteBJoy;
     QLabel *ManetteB2;
     QLabel *ManetteB4;
     QLabel *TitreClavier;
     QLabel *ClavierD;
     QLabel *Retour1;
+    QLabel *Muon;
 
     void setupUi(QWidget *Commande)
     {
@@ -63,14 +61,14 @@ public:
         ClavierH->setScaledContents(false);
         ClavierH->setAlignment(Qt::AlignmentFlag::AlignCenter);
         ClavierH->setWordWrap(false);
-        AccelZ = new QLabel(Commande);
-        AccelZ->setObjectName("AccelZ");
-        AccelZ->setGeometry(QRect(200, 550, 200, 40));
-        AccelZ->setFont(font);
-        AccelZ->setAutoFillBackground(true);
-        AccelZ->setScaledContents(false);
-        AccelZ->setAlignment(Qt::AlignmentFlag::AlignCenter);
-        AccelZ->setWordWrap(false);
+        Accel = new QLabel(Commande);
+        Accel->setObjectName("Accel");
+        Accel->setGeometry(QRect(200, 400, 200, 40));
+        Accel->setFont(font);
+        Accel->setAutoFillBackground(true);
+        Accel->setScaledContents(false);
+        Accel->setAlignment(Qt::AlignmentFlag::AlignCenter);
+        Accel->setWordWrap(false);
         ManetteB3 = new QLabel(Commande);
         ManetteB3->setObjectName("ManetteB3");
         ManetteB3->setGeometry(QRect(200, 250, 200, 40));
@@ -95,14 +93,6 @@ public:
         font1.setPointSize(14);
         TitreManette->setFont(font1);
         TitreManette->setAlignment(Qt::AlignmentFlag::AlignCenter);
-        AccelX = new QLabel(Commande);
-        AccelX->setObjectName("AccelX");
-        AccelX->setGeometry(QRect(200, 450, 200, 40));
-        AccelX->setFont(font);
-        AccelX->setAutoFillBackground(true);
-        AccelX->setScaledContents(false);
-        AccelX->setAlignment(Qt::AlignmentFlag::AlignCenter);
-        AccelX->setWordWrap(false);
         BackGround = new QLabel(Commande);
         BackGround->setObjectName("BackGround");
         BackGround->setGeometry(QRect(0, 0, 1280, 721));
@@ -123,7 +113,7 @@ public:
         ClavierS->setWordWrap(false);
         ManetteJoy = new QLabel(Commande);
         ManetteJoy->setObjectName("ManetteJoy");
-        ManetteJoy->setGeometry(QRect(200, 400, 200, 40));
+        ManetteJoy->setGeometry(QRect(200, 350, 200, 40));
         ManetteJoy->setFont(font);
         ManetteJoy->setAutoFillBackground(true);
         ManetteJoy->setScaledContents(false);
@@ -138,22 +128,6 @@ public:
         ClavierA->setScaledContents(false);
         ClavierA->setAlignment(Qt::AlignmentFlag::AlignCenter);
         ClavierA->setWordWrap(false);
-        AccelY = new QLabel(Commande);
-        AccelY->setObjectName("AccelY");
-        AccelY->setGeometry(QRect(200, 500, 200, 40));
-        AccelY->setFont(font);
-        AccelY->setAutoFillBackground(true);
-        AccelY->setScaledContents(false);
-        AccelY->setAlignment(Qt::AlignmentFlag::AlignCenter);
-        AccelY->setWordWrap(false);
-        ManetteBJoy = new QLabel(Commande);
-        ManetteBJoy->setObjectName("ManetteBJoy");
-        ManetteBJoy->setGeometry(QRect(200, 350, 200, 40));
-        ManetteBJoy->setFont(font);
-        ManetteBJoy->setAutoFillBackground(true);
-        ManetteBJoy->setScaledContents(false);
-        ManetteBJoy->setAlignment(Qt::AlignmentFlag::AlignCenter);
-        ManetteBJoy->setWordWrap(false);
         ManetteB2 = new QLabel(Commande);
         ManetteB2->setObjectName("ManetteB2");
         ManetteB2->setGeometry(QRect(200, 200, 200, 40));
@@ -196,24 +170,30 @@ public:
         Retour1->setPalette(palette);
         Retour1->setAutoFillBackground(true);
         Retour1->setAlignment(Qt::AlignmentFlag::AlignCenter);
+        Muon = new QLabel(Commande);
+        Muon->setObjectName("Muon");
+        Muon->setGeometry(QRect(200, 450, 200, 40));
+        Muon->setFont(font);
+        Muon->setAutoFillBackground(true);
+        Muon->setScaledContents(false);
+        Muon->setAlignment(Qt::AlignmentFlag::AlignCenter);
+        Muon->setWordWrap(false);
         BackGround->raise();
         ClavierW->raise();
         ClavierH->raise();
-        AccelZ->raise();
+        Accel->raise();
         ManetteB3->raise();
         ManetteB1->raise();
         TitreManette->raise();
-        AccelX->raise();
         ClavierS->raise();
         ManetteJoy->raise();
         ClavierA->raise();
-        AccelY->raise();
-        ManetteBJoy->raise();
         ManetteB2->raise();
         ManetteB4->raise();
         TitreClavier->raise();
         ClavierD->raise();
         Retour1->raise();
+        Muon->raise();
 
         retranslateUi(Commande);
 
@@ -225,22 +205,20 @@ public:
         Commande->setWindowTitle(QCoreApplication::translate("Commande", "Form", nullptr));
         ClavierW->setText(QCoreApplication::translate("Commande", "W", nullptr));
         ClavierH->setText(QCoreApplication::translate("Commande", "H", nullptr));
-        AccelZ->setText(QCoreApplication::translate("Commande", "Accel_Z :", nullptr));
+        Accel->setText(QCoreApplication::translate("Commande", "Accel :", nullptr));
         ManetteB3->setText(QCoreApplication::translate("Commande", "Bouton3", nullptr));
         ManetteB1->setText(QCoreApplication::translate("Commande", "Bouton1", nullptr));
         TitreManette->setText(QCoreApplication::translate("Commande", "Controle Manette", nullptr));
-        AccelX->setText(QCoreApplication::translate("Commande", "Accel_X :", nullptr));
         BackGround->setText(QString());
         ClavierS->setText(QCoreApplication::translate("Commande", "S", nullptr));
         ManetteJoy->setText(QCoreApplication::translate("Commande", "EtatJoystick :", nullptr));
         ClavierA->setText(QCoreApplication::translate("Commande", "A", nullptr));
-        AccelY->setText(QCoreApplication::translate("Commande", "Accel_Y :", nullptr));
-        ManetteBJoy->setText(QCoreApplication::translate("Commande", "BoutonJoystick", nullptr));
         ManetteB2->setText(QCoreApplication::translate("Commande", "Bouton2", nullptr));
         ManetteB4->setText(QCoreApplication::translate("Commande", "Bouton4", nullptr));
         TitreClavier->setText(QCoreApplication::translate("Commande", "Equivalent Clavier", nullptr));
         ClavierD->setText(QCoreApplication::translate("Commande", "D", nullptr));
         Retour1->setText(QCoreApplication::translate("Commande", "Retour au menu (2)", nullptr));
+        Muon->setText(QCoreApplication::translate("Commande", "Muons :", nullptr));
     } // retranslateUi
 
 };

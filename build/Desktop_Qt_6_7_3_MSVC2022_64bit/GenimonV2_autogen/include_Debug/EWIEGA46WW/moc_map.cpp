@@ -39,6 +39,10 @@ constexpr auto qt_meta_stringdata_CLASSMapENDCLASS = QtMocHelpers::stringData(
     "requestMenuChange",
     "",
     "index",
+    "setSegment",
+    "seg",
+    "setMessage",
+    "mes",
     "handleKeyPress",
     "key",
     "handleArduinoInput",
@@ -60,28 +64,32 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMapENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       4,   14, // methods
+       6,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       1,       // signalCount
+       3,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    1,   38,    2, 0x06,    1 /* Public */,
+       1,    1,   50,    2, 0x06,    1 /* Public */,
+       4,    1,   53,    2, 0x06,    3 /* Public */,
+       6,    1,   56,    2, 0x06,    5 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       4,    1,   41,    2, 0x0a,    3 /* Public */,
-       6,    4,   44,    2, 0x0a,    5 /* Public */,
-      11,    1,   53,    2, 0x0a,   10 /* Public */,
+       8,    1,   59,    2, 0x0a,    7 /* Public */,
+      10,    4,   62,    2, 0x0a,    9 /* Public */,
+      15,    1,   71,    2, 0x0a,   14 /* Public */,
 
  // signals: parameters
     QMetaType::Void, QMetaType::Int,    3,
+    QMetaType::Void, QMetaType::Int,    5,
+    QMetaType::Void, QMetaType::QString,    7,
 
  // slots: parameters
-    QMetaType::Void, QMetaType::Int,    5,
-    QMetaType::Void, QMetaType::Int, QMetaType::Int, QMetaType::Int, QMetaType::Int,    7,    8,    9,   10,
-    QMetaType::Void, QMetaType::QString,   12,
+    QMetaType::Void, QMetaType::Int,    9,
+    QMetaType::Void, QMetaType::Int, QMetaType::Int, QMetaType::Int, QMetaType::Int,   11,   12,   13,   14,
+    QMetaType::Void, QMetaType::QString,   16,
 
        0        // eod
 };
@@ -98,6 +106,12 @@ Q_CONSTINIT const QMetaObject Map::staticMetaObject = { {
         // method 'requestMenuChange'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'setSegment'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'setMessage'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
         // method 'handleKeyPress'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
@@ -121,9 +135,11 @@ void Map::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **
         (void)_t;
         switch (_id) {
         case 0: _t->requestMenuChange((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
-        case 1: _t->handleKeyPress((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
-        case 2: _t->handleArduinoInput((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[3])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[4]))); break;
-        case 3: _t->setNomJoueur((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 1: _t->setSegment((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 2: _t->setMessage((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 3: _t->handleKeyPress((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 4: _t->handleArduinoInput((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[3])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[4]))); break;
+        case 5: _t->setNomJoueur((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -132,6 +148,20 @@ void Map::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **
             using _t = void (Map::*)(int );
             if (_t _q_method = &Map::requestMenuChange; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 0;
+                return;
+            }
+        }
+        {
+            using _t = void (Map::*)(int );
+            if (_t _q_method = &Map::setSegment; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 1;
+                return;
+            }
+        }
+        {
+            using _t = void (Map::*)(QString );
+            if (_t _q_method = &Map::setMessage; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 2;
                 return;
             }
         }
@@ -157,13 +187,13 @@ int Map::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 4)
+        if (_id < 6)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 6;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 4)
+        if (_id < 6)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 4;
+        _id -= 6;
     }
     return _id;
 }
@@ -173,5 +203,19 @@ void Map::requestMenuChange(int _t1)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
+}
+
+// SIGNAL 1
+void Map::setSegment(int _t1)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    QMetaObject::activate(this, &staticMetaObject, 1, _a);
+}
+
+// SIGNAL 2
+void Map::setMessage(QString _t1)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    QMetaObject::activate(this, &staticMetaObject, 2, _a);
 }
 QT_WARNING_POP

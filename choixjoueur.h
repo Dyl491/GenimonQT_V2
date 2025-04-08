@@ -26,8 +26,6 @@ private:
     int etat;
     char typeChoisi;
     QString nomJoueur;
-    bool Clavier1;
-    bool Clavier2;
 
     int BOUTONS = 0;
     int JOYSTICKS = 0;

@@ -32,15 +32,14 @@ void ChoixJoueur::handleKeyPress(int key) {
 
     if (etat != 0) {
         if (key == Qt::Key_1) {
-            Clavier1 = true;
+            BOUTONS = 1;
             //qDebug() << "Clavier1 (Oui) détecté";
         } else if (key == Qt::Key_2) {
-            Clavier2 = true;
+            BOUTONS = 2;
             //qDebug() << "Clavier2 (Non) détecté";
         }
     }else{
-        Clavier1 = false;
-        Clavier2 = false;
+        BOUTONS = 0;
     }
 
     if (etat == 0 && key == Qt::Key_Escape) {
@@ -56,28 +55,27 @@ void ChoixJoueur::handleKeyPress(int key) {
 
 void ChoixJoueur::handleArduinoInput(int boutons, int joystick, int accelerometre, int muons){
 
-    if(boutons ==1){
-        BOUTONS = 1;
-    }else if(boutons ==2){
-        BOUTONS = 2;
-    }else if(boutons ==3){
-        BOUTONS = 3;
-    }else if(boutons ==4){
-        BOUTONS = 4;
+    if (etat != 0) {
+        if (boutons == 1) {
+            BOUTONS = 1;
+            //qDebug() << "Clavier1 (Oui) détecté";
+        } else if (boutons == 2) {
+            BOUTONS = 2;
+            //qDebug() << "Clavier2 (Non) détecté";
+        }
+    }else{
+        BOUTONS = 0;
     }
 
-    if(joystick ==1){
-        JOYSTICKS = 1;
-    }else if(joystick ==2){
-        JOYSTICKS = 2;
-    }else if(joystick ==3){
-        JOYSTICKS = 3;
-    }else if(joystick ==4){
-        JOYSTICKS = 4;
+    if (etat == 0 && boutons == 4) {
+        nomJoueur = ui->NomChoisi->text();
+        ui->NomChoisi->clearFocus();
+        //qDebug() << "Nom validé par Escape :" << nomJoueur;
+
+        etat = 1;
     }
 
-    ACCEL = accelerometre;
-    MUONS = muons;
+    updateQuiz();
 }
 
 
@@ -99,24 +97,24 @@ void ChoixJoueur::updateQuiz() {
         ui->Continuer->setText("Oui (1)");
         ui->Retour->setText("Non (2)");
 
-        if (Clavier1) {
-            Clavier1 =0;
+        if (BOUTONS == 1) {
+            BOUTONS = 0;
             ui->Description->setText("Est-ce que 80% est une mauvaise note ?");
             etat = 2;
-        } else if (Clavier2) {
-            Clavier2 =0;
+        } else if (BOUTONS == 2) {
+            BOUTONS = 0;
             emit requestMenuChange(0); //Passer au main menu
         }
         break;
 
     case 2: // Question 1 : Est-ce que 80% est une mauvaise note ?
         ui->Description->setText("Est-ce que 80% est une mauvaise note ?");
-        if (Clavier1) {
-            Clavier1 =0;
+        if (BOUTONS == 1) {
+            BOUTONS = 0;
             ui->Description->setText("Est-ce que la physique c'est cool ?");
             etat = 3;
-        } else if (Clavier2) {
-            Clavier2 =0;
+        } else if (BOUTONS == 2) {
+            BOUTONS = 0;
             ui->Description->setText("Est-ce que tu penses que les ordinateurs fonctionnent avec de l'essence ?");
             etat = 5;
         }
@@ -124,15 +122,15 @@ void ChoixJoueur::updateQuiz() {
 
     case 3: // Question 2 : Est-ce que la physique c'est cool ?
         ui->Description->setText("Est-ce que la physique c'est cool ?");
-        if (Clavier1) {
-            Clavier1 =0;
+        if (BOUTONS == 1) {
+            BOUTONS = 0;
             ui->Description->setText("Félicitations tu es un génie robotique! Tu as terminé le quiz.");
             ui->Continuer->setText("Débuter de la partie (1)");
             ui->Retour->setText("Recommencer le quiz (2)");
             typeChoisi = '3'; // Type robotique
             etat = 9;
-        } else if (Clavier2) {
-            Clavier2 =0;
+        } else if (BOUTONS == 2) {
+            BOUTONS = 0;
             ui->Description->setText("Est-ce que des trucs morts c'est cool ?");
             etat = 4;
         }
@@ -140,15 +138,15 @@ void ChoixJoueur::updateQuiz() {
 
     case 4: // Question 3 : Est-ce que des trucs morts c'est cool ?
         ui->Description->setText("Est-ce que des trucs morts c'est cool ?");
-        if (Clavier1) {
-            Clavier1 =0;
+        if (BOUTONS == 1) {
+            BOUTONS = 0;
             ui->Description->setText("Félicitations tu es un génie biotech! Tu as terminé le quiz.");
             ui->Continuer->setText("Débuter de la partie (1)");
             ui->Retour->setText("Recommencer le quiz (2)");
             typeChoisi = '7'; // Type biotech
             etat = 9;
-        } else if (Clavier2) {
-            Clavier2 =0;
+        } else if (BOUTONS == 2) {
+            BOUTONS = 0;
             ui->Description->setText("Félicitations tu es un génie chimique! Tu as terminé le quiz.");
             ui->Continuer->setText("Débuter de la partie (1)");
             ui->Retour->setText("Recommencer le quiz (2)");
@@ -159,15 +157,15 @@ void ChoixJoueur::updateQuiz() {
 
     case 5: // Question 4 : Est-ce que tu penses que les ordinateurs fonctionnent avec de l'essence ?
         ui->Description->setText("Est-ce que tu penses que les ordinateurs fonctionnent avec de l'essence ?");
-        if (Clavier1) {
-            Clavier1 =0;
+        if (BOUTONS == 1) {
+            BOUTONS = 0;
             ui->Description->setText("Hmmm, intéressant... Tu es un génie mécanique. Félicitations ! Tu as terminé le quiz.");
             ui->Continuer->setText("Débuter de la partie (1)");
             ui->Retour->setText("Recommencer le quiz (2)");
             typeChoisi = '4'; // Type mécanique
             etat = 9;
-        } else if (Clavier2) {
-            Clavier2 =0;
+        } else if (BOUTONS == 2) {
+            BOUTONS = 0;
             ui->Description->setText("Est-ce que tu sais ce que c'est un Amplis-Op ?");
             etat = 6;
         }
@@ -175,12 +173,12 @@ void ChoixJoueur::updateQuiz() {
 
     case 6: // Question 5 : Est-ce que tu sais ce que c'est un Amplis-Op ?
         ui->Description->setText("Est-ce que tu sais ce que c'est un Amplis-Op ?");
-        if (Clavier1) {
-            Clavier1 =0;
+        if (BOUTONS == 1) {
+            BOUTONS = 0;
             ui->Description->setText("Est-ce qu'il te font peur ?");
             etat = 7;
-        } else if (Clavier2) {
-            Clavier2 =0;
+        } else if (BOUTONS == 2) {
+            BOUTONS = 0;
             ui->Description->setText("Est-ce que tu es basique ?");
             etat = 8;
         }
@@ -188,15 +186,15 @@ void ChoixJoueur::updateQuiz() {
 
     case 7: // Question 6 : Est-ce qu'il te font peur ?
         ui->Description->setText("Est-ce qu'il te font peur ?");
-        if (Clavier1) {
-            Clavier1 =0;
+        if (BOUTONS == 1) {
+            BOUTONS = 0;
             ui->Description->setText("Félicitations tu es un génie informatique! Tu as terminé le quiz.");
             ui->Continuer->setText("Débuter de la partie (1)");
             ui->Retour->setText("Recommencer le quiz (2)");
             typeChoisi = '1'; // Type informatique
             etat = 9;
-        } else if (Clavier2) {
-            Clavier2 =0;
+        } else if (BOUTONS == 2) {
+            BOUTONS = 0;
             ui->Description->setText("Félicitations tu es un génie électrique! Tu as terminé le quiz.");
             ui->Continuer->setText("Débuter de la partie (1)");
             ui->Retour->setText("Recommencer le quiz (2)");
@@ -207,15 +205,15 @@ void ChoixJoueur::updateQuiz() {
 
     case 8: // Question 7 : Est-ce que tu es basique ?
         ui->Description->setText("Est-ce que tu es basique ?");
-        if (Clavier1) {
-            Clavier1 =0;
+        if (BOUTONS == 1) {
+            BOUTONS = 0;
             ui->Description->setText("Félicitations tu es un génie civil! Tu as terminé le quiz.");
             ui->Continuer->setText("Débuter de la partie (1)");
             ui->Retour->setText("Recommencer le quiz (2)");
             typeChoisi = '5'; // Type civil
             etat = 9;
-        } else if (Clavier2) { // Réponse "Non" (Clavier2)
-            Clavier2 =0;
+        } else if (BOUTONS == 2) { // Réponse "Non" (Clavier2)
+            BOUTONS = 0;
             ui->Description->setText("Félicitations tu es un génie du bâtiment! Tu as terminé le quiz.");
             ui->Continuer->setText("Débuter de la partie (1)");
             ui->Retour->setText("Recommencer le quiz (2)");
@@ -229,16 +227,16 @@ void ChoixJoueur::updateQuiz() {
         ui->Continuer->setText("Débuter de la partie (1)");
         ui->Retour->setText("Recommencer le quiz (2)");
 
-        if (Clavier1)
+        if (BOUTONS == 1)
         {
-            Clavier1 =0;
+            BOUTONS = 0;
             emit sendNomJoueur(nomJoueur); //Envoyer le nom du joueur a la classe map
             emit requestMenuChange(2); //Passer au menu map
         }
 
-        if (Clavier2)
+        if (BOUTONS == 2)
         {
-            Clavier2 =0;
+            BOUTONS = 0;
             etat = 1;
             typeChoisi = '0';
         }

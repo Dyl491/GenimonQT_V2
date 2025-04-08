@@ -16,20 +16,30 @@ ChoixAction::~ChoixAction()
 
 
 void ChoixAction::handleKeyPress(int key) {
+
     if (key == Qt::Key_1) {
-        emit requestMenuChange(4); //Passer au menu combat
-        clearFocus();
+        BOUTONS = 1;
+    }else if (key == Qt::Key_2) {
+        BOUTONS = 2;
+    }else if (key == Qt::Key_3) {
+        BOUTONS = 3;
+    }else if (key == Qt::Key_4) {
+        BOUTONS = 4;
     }
 
-    if (key == Qt::Key_2) {
-        emit requestMenuChange(3); //Passer au menu capture
-        clearFocus();
+    if (key == Qt::Key_W){
+        JOYSTICKS = 1;
+    }else if (key == Qt::Key_D){
+        JOYSTICKS = 2;
+    }else if (key == Qt::Key_S){
+        JOYSTICKS = 3;
+    }else if (key == Qt::Key_A){
+        JOYSTICKS = 4;
+    }else{
+        JOYSTICKS = 0;
     }
 
-    if (key == Qt::Key_3) {
-        emit requestMenuChange(2); //Passer au menu map
-        clearFocus();
-    }
+    update();
 }
 
 void ChoixAction::handleArduinoInput(int boutons, int joystick, int accelerometre, int muons){
@@ -54,6 +64,35 @@ void ChoixAction::handleArduinoInput(int boutons, int joystick, int accelerometr
         JOYSTICKS = 4;
     }
 
-    ACCEL = accelerometre;
-    MUONS = muons;
+    update();
+}
+
+void ChoixAction::update(){
+
+    if (BOUTONS == 1) {
+        BOUTONS = 0;
+        JOYSTICKS = 0;
+        ACCEL = 0;
+        MUONS = 0;
+        emit requestMenuChange(4); //Passer au menu combat
+        clearFocus();
+    }
+
+    if (BOUTONS == 2) {
+        BOUTONS = 0;
+        JOYSTICKS = 0;
+        ACCEL = 0;
+        MUONS = 0;
+        emit requestMenuChange(3); //Passer au menu capture
+        clearFocus();
+    }
+
+    if (BOUTONS == 3) {
+        BOUTONS = 0;
+        JOYSTICKS = 0;
+        ACCEL = 0;
+        MUONS = 0;
+        emit requestMenuChange(2); //Passer au menu map
+        clearFocus();
+    }
 }
