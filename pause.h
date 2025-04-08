@@ -17,6 +17,7 @@ public:
 
 public slots:
     void handleKeyPress(int key);
+    void handleArduinoInput(int boutons, int joystick, int accelerometre, int muons);
 
 private:
     Ui::Pause* ui;

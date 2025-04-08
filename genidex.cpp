@@ -17,7 +17,62 @@ Genidex::~Genidex()
 
 void Genidex::handleKeyPress(int key) {
 
-    if (key == Qt::Key_F && etat ==0) // Si la touche F est enfoncée
+    if (key == Qt::Key_1) {
+        BOUTONS = 1;
+    }else if (key == Qt::Key_2) {
+        BOUTONS = 2;
+    }else if (key == Qt::Key_3) {
+        BOUTONS = 3;
+    }else if (key == Qt::Key_4) {
+        BOUTONS = 4;
+    }
+
+    if (key == Qt::Key_W){
+        JOYSTICKS = 1;
+    }else if (key == Qt::Key_D){
+        JOYSTICKS = 2;
+    }else if (key == Qt::Key_S){
+        JOYSTICKS = 3;
+    }else if (key == Qt::Key_A){
+        JOYSTICKS = 4;
+    }else{
+        JOYSTICKS = 0;
+    }
+
+    update();
+}
+
+void Genidex::handleArduinoInput(int boutons, int joystick, int accelerometre, int muons){
+
+    if(boutons ==1){
+        BOUTONS = 1;
+    }else if(boutons ==2){
+        BOUTONS = 2;
+    }else if(boutons ==3){
+        BOUTONS = 3;
+    }else if(boutons ==4){
+        BOUTONS = 4;
+    }
+
+    if(joystick ==1){
+        JOYSTICKS = 1;
+    }else if(joystick ==2){
+        JOYSTICKS = 2;
+    }else if(joystick ==3){
+        JOYSTICKS = 3;
+    }else if(joystick ==4){
+        JOYSTICKS = 4;
+    }
+
+    ACCEL = accelerometre;
+    MUONS = muons;
+
+    update();
+}
+
+void Genidex::update(){
+
+    if (JOYSTICKS > 0 && etat ==0) // Si la touche F est enfoncée
     {
         if (etatFiltre == "aucun") {
             etatFiltre = "batiment";
@@ -41,35 +96,39 @@ void Genidex::handleKeyPress(int key) {
         showListGenimon();
     }
 
-    if (key == Qt::Key_4 && etat ==0)
+    if (BOUTONS == 4 && etat ==0)
     {
+        BOUTONS = 0;
+        JOYSTICKS = 0;
+        ACCEL = 0;
+        MUONS = 0;
         emit requestMenuChange(2); //Passer au menu Map
-    } else if (key == Qt::Key_1 && etat ==0)
+    } else if (BOUTONS == 1 && etat ==0)
     {
         etat =1;
         showGenimon();
-    }else if (key == Qt::Key_3 && etat ==1)
+    }else if (BOUTONS == 3 && etat ==1)
     {
         etat =0;
         showListGenimon();
-    }else if (key == Qt::Key_2 && etat ==0)
+    }else if (BOUTONS == 2 && etat ==0)
     {
         //Guerir genimon
     }
 
-    if (key == Qt::Key_W && selectionGenimon > 3)
+    if (JOYSTICKS == 1 && selectionGenimon > 3)
     {
         selectionGenimon = selectionGenimon -4;
         highlight();
-    }else if (key == Qt::Key_S && selectionGenimon <4)
+    }else if (JOYSTICKS == 3 && selectionGenimon <4)
     {
         selectionGenimon = selectionGenimon +4;
         highlight();
-    }else if (key == Qt::Key_A && selectionGenimon > 0 && selectionGenimon <= 7)
+    }else if (JOYSTICKS == 4 && selectionGenimon > 0 && selectionGenimon <= 7)
     {
         selectionGenimon--;
         highlight();
-    }else if (key == Qt::Key_D && selectionGenimon >= 0 && selectionGenimon < 7)
+    }else if (JOYSTICKS == 2 && selectionGenimon >= 0 && selectionGenimon < 7)
     {
         selectionGenimon++;
         highlight();

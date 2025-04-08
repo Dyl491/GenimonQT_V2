@@ -25,3 +25,15 @@ void Pause::handleKeyPress(int key) {
         emit requestMenuChange(2); //Passer au menu map
     }
 }
+
+void Pause::handleArduinoInput(int boutons, int joystick, int accelerometre, int muons){
+
+    if(boutons ==1){
+        QApplication::quit(); // Quitter
+    }else if(boutons ==2){
+        emit requestMenuChange(0); //Passer au menu main
+        emit reinitialiserJeu();
+    }else if(boutons ==4){
+        emit requestMenuChange(2); //Passer au menu map
+    }
+}

@@ -72,6 +72,6 @@ private:
 
 signals:
     void sendKeyPress(int key); // Signal pour envoyer les touches clavier
-    //void sendManettePress(int bouton, int joystick, int accel, int muons); // Signal pour envoyer les touches manettes
+    void sendManetteInput(int bouton, int joystick, int accel, int muons); // Signal pour envoyer les touches manettes
 };
 #endif // CONTROLE_H

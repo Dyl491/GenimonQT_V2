@@ -16,7 +16,8 @@ public:
     ~ChoixJoueur();
 
 public slots:
-    void handleKeyPress(int key);   // Slot pour gérer les touches 1 et 2
+    void handleKeyPress(int key);
+    void handleArduinoInput(int boutons, int joystick, int accelerometre, int muons);
 
 private:
     Ui::ChoixJoueur *ui;
@@ -27,6 +28,11 @@ private:
     QString nomJoueur;
     bool Clavier1;
     bool Clavier2;
+
+    int BOUTONS = 0;
+    int JOYSTICKS = 0;
+    int ACCEL = 0;
+    int MUONS = 0;
 
 signals:
     void requestMenuChange(int index);  // Signal pour demander un changement de menu

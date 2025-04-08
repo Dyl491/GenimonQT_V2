@@ -20,3 +20,11 @@ void Regle::handleKeyPress(int key) {
         clearFocus();
     }
 }
+
+void Regle::handleArduinoInput(int boutons, int joystick, int accelerometre, int muons){
+
+    if (boutons == 2) {
+        emit requestMenuChange(0); //Passer au menu principal
+        clearFocus();
+    }
+}

@@ -177,41 +177,68 @@ void Controle::changeMenu(int index) {
     disconnect(commandeMenu, &Commande::requestMenuChange, this, &Controle::changeMenu);
     disconnect(this, &Controle::sendKeyPress, regleMenu, &Regle::handleKeyPress);
     disconnect(regleMenu, &Regle::requestMenuChange, this, &Controle::changeMenu);
-
+    disconnect(this, &Controle::sendKeyPress, pauseMenu, &Pause::handleKeyPress);
+    disconnect(pauseMenu, &Pause::requestMenuChange, this, &Controle::changeMenu);
     disconnect(this, &Controle::sendKeyPress, choixActionMenu, &ChoixAction::handleKeyPress);
     disconnect(choixActionMenu, &ChoixAction::requestMenuChange, this, &Controle::changeMenu);
+
+    disconnect(this, &Controle::sendManetteInput, choixJoueurMenu, &ChoixJoueur::handleArduinoInput);
+    disconnect(this, &Controle::sendManetteInput, mapMenu, &Map::handleArduinoInput);
+    disconnect(this, &Controle::sendManetteInput, captureMenu, &Capture::handleArduinoInput);
+    disconnect(this, &Controle::sendManetteInput, combatMenu, &Combat::handleArduinoInput);
+    disconnect(this, &Controle::sendManetteInput, genidexMenu, &Genidex::handleArduinoInput);
+    disconnect(this, &Controle::sendManetteInput, histoRencontreMenu, &HistoRencontre::handleArduinoInput);
+    disconnect(this, &Controle::sendManetteInput, commandeMenu, &Commande::handleArduinoInput);
+    disconnect(this, &Controle::sendManetteInput, regleMenu, &Regle::handleArduinoInput);
+    disconnect(this, &Controle::sendManetteInput, pauseMenu, &Pause::handleArduinoInput);
+    disconnect(this, &Controle::sendManetteInput, choixActionMenu, &ChoixAction::handleArduinoInput);
+    disconnect(mapMenu, &Map::setSegment, this, &Controle::setSegment);
+    disconnect(mapMenu, &Map::setMessage, this, &Controle::setMessage);
 
 
 // Relier commande clavier et de changement de menu aux autres menus.
     if(index == 1){
         connect(this, &Controle::sendKeyPress, choixJoueurMenu, &ChoixJoueur::handleKeyPress);
         connect(choixJoueurMenu, &ChoixJoueur::requestMenuChange, this, &Controle::changeMenu);
+        connect(this, &Controle::sendManetteInput, choixJoueurMenu, &ChoixJoueur::handleArduinoInput);
     }else if(index == 2){
         connect(this, &Controle::sendKeyPress, mapMenu, &Map::handleKeyPress);
         connect(mapMenu, &Map::requestMenuChange, this, &Controle::changeMenu);
+        connect(this, &Controle::sendManetteInput, mapMenu, &Map::handleArduinoInput);
+        connect(mapMenu, &Map::setSegment, this, &Controle::setSegment);
+        connect(mapMenu, &Map::setMessage, this, &Controle::setMessage);
     }else if(index == 3){
         connect(this, &Controle::sendKeyPress, captureMenu, &Capture::handleKeyPress);
         connect(captureMenu, &Capture::requestMenuChange, this, &Controle::changeMenu);
+        connect(this, &Controle::sendManetteInput, captureMenu, &Capture::handleArduinoInput);
     }else if(index == 4){
         connect(this, &Controle::sendKeyPress, combatMenu, &Combat::handleKeyPress);
         connect(combatMenu, &Combat::requestMenuChange, this, &Controle::changeMenu);
+        connect(this, &Controle::sendManetteInput, combatMenu, &Combat::handleArduinoInput);
     }else if(index == 5){
         connect(this, &Controle::sendKeyPress, genidexMenu, &Genidex::handleKeyPress);
         connect(genidexMenu, &Genidex::requestMenuChange, this, &Controle::changeMenu);
+        connect(this, &Controle::sendManetteInput, genidexMenu, &Genidex::handleArduinoInput);
     }else if(index == 6){
         connect(this, &Controle::sendKeyPress, histoRencontreMenu, &HistoRencontre::handleKeyPress);
         connect(histoRencontreMenu, &HistoRencontre::requestMenuChange, this, &Controle::changeMenu);
+        connect(this, &Controle::sendManetteInput, histoRencontreMenu, &HistoRencontre::handleArduinoInput);
     }else if(index == 7){
         connect(this, &Controle::sendKeyPress, commandeMenu, &Commande::handleKeyPress);
         connect(commandeMenu, &Commande::requestMenuChange, this, &Controle::changeMenu);
+        connect(this, &Controle::sendManetteInput, commandeMenu, &Commande::handleArduinoInput);
     }else if(index == 8){
         connect(this, &Controle::sendKeyPress, regleMenu, &Regle::handleKeyPress);
         connect(regleMenu, &Regle::requestMenuChange, this, &Controle::changeMenu);
+        connect(this, &Controle::sendManetteInput, regleMenu, &Regle::handleArduinoInput);
     }else if(index == 9){
-
+        connect(this, &Controle::sendKeyPress, pauseMenu, &Pause::handleKeyPress);
+        connect(pauseMenu, &Pause::requestMenuChange, this, &Controle::changeMenu);
+        connect(this, &Controle::sendManetteInput, pauseMenu, &Pause::handleArduinoInput);
     }else if(index == 10){
         connect(this, &Controle::sendKeyPress, choixActionMenu, &ChoixAction::handleKeyPress);
         connect(choixActionMenu, &ChoixAction::requestMenuChange, this, &Controle::changeMenu);
+        connect(this, &Controle::sendManetteInput, choixActionMenu, &ChoixAction::handleArduinoInput);
     }
 }
 
@@ -322,6 +349,8 @@ void Controle::RcvFromSerial() {
     if (jsonObject.contains("muons")) {
         MUONS = jsonObject["muons"].toInt();
     }
+
+    emit sendManetteInput(BOUTTONS, JOYSTICK, ACCELEROMETRE, MUONS);
 }
 
 
@@ -374,11 +403,4 @@ void Controle::setMessage(QString mes)
 {
     MESSAGE = mes;
 }
-
-
-
-
-
-
-
 

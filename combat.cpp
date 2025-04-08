@@ -22,6 +22,32 @@ void Combat::handleKeyPress(int key) {
     }
 }
 
+void Combat::handleArduinoInput(int boutons, int joystick, int accelerometre, int muons){
+
+    if(boutons ==1){
+        BOUTONS = 1;
+    }else if(boutons ==2){
+        BOUTONS = 2;
+    }else if(boutons ==3){
+        BOUTONS = 3;
+    }else if(boutons ==4){
+        BOUTONS = 4;
+    }
+
+    if(joystick ==1){
+        JOYSTICKS = 1;
+    }else if(joystick ==2){
+        JOYSTICKS = 2;
+    }else if(joystick ==3){
+        JOYSTICKS = 3;
+    }else if(joystick ==4){
+        JOYSTICKS = 4;
+    }
+
+    ACCEL = accelerometre;
+    MUONS = muons;
+}
+
 void Combat::showEvent(QShowEvent *event) {
 
     //qDebug() << "La fenêtre de combat est maintenant affichée!";

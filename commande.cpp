@@ -54,3 +54,23 @@ void Commande::handleKeyPress(int key) {
         ui->ClavierH->setStyleSheet("background-color: red;");
     }
 }
+
+void Commande::handleArduinoInput(int boutons, int joystick, int accelerometre, int muons){
+
+
+    if(boutons ==2){
+        ui->ManetteB2->setStyleSheet("background-color: green;");
+    }else{
+
+    }
+
+    if(joystick ==1){
+
+    }else if(joystick ==2){
+
+    }else if(joystick ==3){
+
+    }else if(joystick ==4){
+
+    }
+}
